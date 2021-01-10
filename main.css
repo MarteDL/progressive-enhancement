@@ -5,16 +5,27 @@ body {
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: cover;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header time {
     background: yellow
 }
 
+img {
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+}
+
 p {
     font: medium Garamond, serif;
     color: #171616;
     letter-spacing: 1px;
+}
+
+p:first-of-type {
+    font-weight: bold;
 }
 
 .villagers {
@@ -24,7 +35,13 @@ p {
 .farmer {
     border-left: 4px solid green;
 }
+tr:nth-child(even) {
+    background: grey;
+}
 
+tr:nth-child(odd) {
+    background: white;
+}
 
 a:link {
     color: darkred;
@@ -54,4 +71,16 @@ q {
     background: lightgray;
     padding: 30px;
     margin: 80px 0;
+}
+
+.good {
+    font-style: italic;
+    text-transform: capitalize;
+    color: green;
+}
+
+.bad {
+    font-style: italic;
+    text-transform: capitalize;
+    color: red;
 }
